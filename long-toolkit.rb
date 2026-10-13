@@ -5,21 +5,21 @@
 class LongToolkit < Formula
   desc "Interactive no-code terminal CLI for Long-Toolkit, a hub of toolkits for longitudinal data in Python."
   homepage "https://github.com/Long-Toolkit/long-toolkit"
-  version "0.0.2"
+  version "0.0.9"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Long-Toolkit/CLI/releases/download/v0.0.2/long-toolkit_0.0.2_darwin_amd64.tar.gz"
-      sha256 "c09b59e337a133abd46b2eae5376f5bfb4c6d22f54d8c94186cc2de4f40bdee4"
+      url "https://github.com/Long-Toolkit/CLI/releases/download/v0.0.9/long-toolkit_0.0.9_darwin_amd64.tar.gz"
+      sha256 "4eca77f1fbabbbc2fad5064e52e25fa8c549a1666507576e36a6bfc00d7f156a"
 
       define_method(:install) do
         bin.install "long-toolkit"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Long-Toolkit/CLI/releases/download/v0.0.2/long-toolkit_0.0.2_darwin_arm64.tar.gz"
-      sha256 "75cddfdb4322a7b092f4bd682f2b3818da83cf34686f56dcc744a37d06541be4"
+      url "https://github.com/Long-Toolkit/CLI/releases/download/v0.0.9/long-toolkit_0.0.9_darwin_arm64.tar.gz"
+      sha256 "4470acc6e1ee01444ae144550932ceb9140eb44ded46b8602fb1754bb610aaf9"
 
       define_method(:install) do
         bin.install "long-toolkit"
@@ -29,15 +29,15 @@ class LongToolkit < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Long-Toolkit/CLI/releases/download/v0.0.2/long-toolkit_0.0.2_linux_amd64.tar.gz"
-      sha256 "0d51e259b0ebd8af3d846d5ed802f3ab763b8a34d7b19c9c1d59041d695daab2"
+      url "https://github.com/Long-Toolkit/CLI/releases/download/v0.0.9/long-toolkit_0.0.9_linux_amd64.tar.gz"
+      sha256 "1fa72af698267b692f619218618dbad0ba79058f7dfb1e85228a4f096aec271a"
       define_method(:install) do
         bin.install "long-toolkit"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Long-Toolkit/CLI/releases/download/v0.0.2/long-toolkit_0.0.2_linux_arm64.tar.gz"
-      sha256 "837cf70a05d564b6c93b5119b5ee52055e6ac02100166bb44a97201ce1e44370"
+      url "https://github.com/Long-Toolkit/CLI/releases/download/v0.0.9/long-toolkit_0.0.9_linux_arm64.tar.gz"
+      sha256 "6eac6f8acba9442556707c6199385210c214be2ca287adf43c5fbe2e5dd48de8"
       define_method(:install) do
         bin.install "long-toolkit"
       end
